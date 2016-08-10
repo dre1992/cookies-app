@@ -90,6 +90,8 @@ public class MainFragment extends Fragment {
 
 // With HttpUrlConnection you can only make a single request at a time and it makes it a bit greedy on memory but for the purpose of
 // this test is was enough.
+//originally i used HttpCline but it is deprecated so i decided to avoid it. Google suggets the use of Volley library but for 
+//now HttpUrlConnection was enough and robust enough to make all the requests.
 
 // The session should be close and a new request can be made this time with the token that is stored and the appropriate parameters
 //!!!!in a full developed app we should encrypt the token so that is not accessible to malignant use
